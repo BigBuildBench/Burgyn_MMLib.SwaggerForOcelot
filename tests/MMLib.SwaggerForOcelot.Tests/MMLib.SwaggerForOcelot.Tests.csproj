@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Properties\**" />
+    <EmbeddedResource Remove="Properties\**" />
+    <None Remove="Properties\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\AggregatesOpenApiResource.json" />
+    <None Remove="Resources\DifferentOcelotRoutesForOneDownstream.json" />
+    <None Remove="Resources\DifferentOcelotRoutesForOneDownstreamTransformed.json" />
+    <None Remove="Tests\BasicConfigurationWithSchemaInHostOverride.json" />
+    <None Remove="Tests\Issue_128.json" />
+    <None Remove="Tests\Issue_135.json" />
+    <None Remove="Tests\Issue_149.json" />
+    <None Remove="Tests\Issue_186.json" />
+    <None Remove="Tests\Issue_65.json" />
+    <None Remove="Tests\OpenApiWithListOfServers.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AggregatesOpenApiResource.json" />
+    <EmbeddedResource Include="Resources\DifferentOcelotRoutesForOneDownstream.json" />
+    <EmbeddedResource Include="Resources\DifferentOcelotRoutesForOneDownstreamTransformed.json" />
+    <EmbeddedResource Include="Resources\OpenApiWithVersionPlaceholderBase.json" />
+    <EmbeddedResource Include="Resources\OpenApiWithVersionPlaceholderBaseTransformed.json" />
+    <EmbeddedResource Include="Resources\OpenApiBase.json" />
+    <EmbeddedResource Include="Resources\OpenApiBaseTransformed.json" />
+    <EmbeddedResource Include="Tests\BasicConfigurationWithSchemaInHostOverride.json" />
+
+    <EmbeddedResource Include="Tests\BasicConfiguration.json" />
+
+    <EmbeddedResource Include="Tests\BasicSecurityDefinition.json" />
+
+    <EmbeddedResource Include="Tests\DoNotRemoveUnusedComponents.json" />
+
+    <EmbeddedResource Include="Tests\Issue_186.json" />
+
+    <EmbeddedResource Include="Tests\Issue_149.json" />
+
+    <EmbeddedResource Include="Tests\Issue_135.json" />
+
+    <EmbeddedResource Include="Tests\Issue_65.json" />
+
+    <EmbeddedResource Include="Tests\Issue_128.json" />
+
+    <EmbeddedResource Include="Tests\OpenApiDoNotRemoveUnusedComponents.json" />
+
+    <EmbeddedResource Include="Tests\OpenApiWithListOfServers.json" />
+    <EmbeddedResource Include="Tests\SwaggerWithBasePath.json" />
+    <EmbeddedResource Include="Tests\OcelotRouteOnlyOneController.json" />
+    <EmbeddedResource Include="Tests\BasicConfigurationWithVirtualDirectory.json" />
+    <EmbeddedResource Include="Tests\NestedClasses.json" />
+    <EmbeddedResource Include="Tests\ConfigurationIsSplitByControllers.json" />
+    <EmbeddedResource Include="Tests\ConfigurationIsSplitToSomeParts.json" />
+    <EmbeddedResource Include="Tests\ConfigurationContainsOnlyPostMethods.json" />
+    <EmbeddedResource Include="Tests\SwaggerContainsInnerReferenceDefinition.json" />
+    <EmbeddedResource Include="Tests\OpenApiWithBasicConfiguration.json" />
+    <EmbeddedResource Include="Tests\OpenApiWithVirtualDirectory.json" />
+    <EmbeddedResource Include="Tests\OpenApiWithServers.json" />
+    <EmbeddedResource Include="Tests\OpenApiWithHostOverridden.json" />
+    <EmbeddedResource Include="Tests\OpenApiWithHostOverriddenWhenUpstreamAndDownstreamPathsAreDifferent.json" />
+  </ItemGroup>
+</Project>
